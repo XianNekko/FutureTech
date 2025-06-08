@@ -8,6 +8,9 @@
 @use './base/fonts';
 @use './base/globals';
 
-//@use './layout';
-//
-//@use './components';
+@use './layout/header';
+
+@use './components/icon';
+@use './components/button';
+@use './components/burger-button';
+@use './components/logo';
