@@ -98,7 +98,7 @@ button {
 
     &::before {
       @include abs-center;
-      @include square(44);
+      @include square(rem(44));
 
       content: '';
     }

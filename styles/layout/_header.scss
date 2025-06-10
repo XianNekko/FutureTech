@@ -1,9 +1,14 @@
 @use '../utilities' as *;
 
 .header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+
   &__promo {
     padding-block: rem(20);
     text-align: center;
+    background-color: var(--color-dark);
     border-bottom: var(--border);
 
     @include mobile {

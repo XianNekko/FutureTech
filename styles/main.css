@@ -259,42 +259,42 @@ svg * {
   font-style: normal;
   font-display: swap;
   font-weight: 400;
-  src: url("../../assets/fonts/kumbh-sans/kumbh-sans-v26-latin-regular.woff2") format("woff2");
+  src: url("/assets/fonts/kumbh-sans/kumbh-sans-v26-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Kumbh";
   font-style: normal;
   font-display: swap;
   font-weight: 500;
-  src: url("../../assets/fonts/kumbh-sans/kumbh-sans-v26-latin-500.woff2") format("woff2");
+  src: url("/assets/fonts/kumbh-sans/kumbh-sans-v26-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
-  src: url("../../assets/fonts/inter/inter-v19-latin-regular.woff2") format("woff2");
+  src: url("/assets/fonts/inter/inter-v19-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
-  src: url("../../assets/fonts/inter/inter-v19-latin-500.woff2") format("woff2");
+  src: url("/assets/fonts/inter/inter-v19-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
-  src: url("../../assets/fonts/inter/inter-v19-latin-600.woff2") format("woff2");
+  src: url("/assets/fonts/inter/inter-v19-latin-600.woff2") format("woff2");
 }
 @font-face {
   font-display: swap;
   font-family: "Inter";
   font-style: normal;
   font-weight: 700;
-  src: url("../../assets/fonts/inter/inter-v19-latin-700.woff2") format("woff2");
+  src: url("/assets/fonts/inter/inter-v19-latin-700.woff2") format("woff2");
 }
 html.is-lock {
   overflow: hidden;
@@ -399,14 +399,20 @@ button[aria-label]::before {
   top: 50%;
   left: 50%;
   translate: -50% -50%;
-  width: 44;
-  height: 44;
+  width: 2.75rem;
+  height: 2.75rem;
   content: "";
 }
 
+.header {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+}
 .header__promo {
   padding-block: 1.25rem;
   text-align: center;
+  background-color: var(--color-dark);
   border-bottom: var(--border);
 }
 @media (width <= 47.99875rem) {
@@ -519,7 +525,7 @@ button[aria-label]::before {
   }
 }
 .icon--yellow-arrow::after {
-  background-image: url("../../assets/icons/arrow-top-right_yellow.svg");
+  background-image: url("/assets/icons/arrow-top-right_yellow.svg");
 }
 
 .button {

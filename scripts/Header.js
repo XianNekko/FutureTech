@@ -13,18 +13,18 @@ class Header {
   constructor() {
     this.rootElement = document.querySelector(this.selectors.root)
     this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
-    this.burgerButtonElemnet = this.rootElement.querySelector(this.selectors.burgerButton)
+    this.burgerButtonElemet = this.rootElement.querySelector(this.selectors.burgerButton)
     this.bindEvents()
   }
 
   onBurgerButtonClick = () => {
-    this.burgerButtonElemnet.classList.toggle(this.stateClasses.isActive)
+    this.burgerButtonElemet.classList.toggle(this.stateClasses.isActive)
     this.overlayElement.classList.toggle(this.stateClasses.isActive)
     document.documentElement.classList.toggle(this.stateClasses.isLock)
   }
 
   bindEvents() {
-    this.burgerButtonElemnet.addEventListener('click', this.onBurgerButtonClick)
+    this.burgerButtonElemet.addEventListener('click', this.onBurgerButtonClick)
   }
 }
 
